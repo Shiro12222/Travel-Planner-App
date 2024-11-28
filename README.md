@@ -44,6 +44,7 @@ Group info:
     2.16 Setting
       
   2.2 package.json Dependencies:
+  
     - "bcrypt": "^5.1.1",
     - "bcryptjs": "^2.4.3",
     - "bootstrap": "^5.3.2",
