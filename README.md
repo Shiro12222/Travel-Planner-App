@@ -7,18 +7,17 @@ Notes:
 - `README.md` is important to let me know your project functions, which is crucial to marking the grade of
 your project.
 
+# Travel Planner Web Application
 
-1. Project name: 
-  Travel Planner Web Application
+### Group info: COMP S381F Group 8
 
-Group info: 
-  COMP S381F Group 8
-  Ng Man Hei      13505304
-  Tse Man Hin     13515463
-  Wong Sin Ngai   13588511
-  Pau Ka Lok      13068093
-  Leung Aidan     13626010
-
+|     Student Name: `** for our group leader`   |   Student ID  |
+| :---: | :---: |
+| ** Ng Man Hei | 13505304      |  
+| Tse Man Hin   | 13515463      |
+| Wong Sin Ngai | 13588511      |
+| Pau Ka Lok    | 13068093      |
+| Leung Aidan   | 13626010      |
 
 2. Project file info: 
   2.1 Summary of functionalities of our web provided Server.js:
@@ -70,6 +69,6 @@ Group info:
 
   2.5 models
 
-3. cloud-based server URL: https://hkmu381-grpprj.onrender.com/
+3. cloud-based server URL: https://hkmu381-grpprj.onrender.com/ 
 
 4.
