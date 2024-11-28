@@ -45,24 +45,24 @@ Group info:
       
   2.2 package.json Dependencies:
   
-    - "bcrypt": "^5.1.1",
-    - "bcryptjs": "^2.4.3",
-    - "bootstrap": "^5.3.2",
-    - "connect-flash": "^0.1.1",
-    - "cookie-session": "^2.0.0",
-    - "dotenv": "^16.4.5",
-    - "ejs": "^3.1.10",
-    - "express": "^4.21.1",
-    - "express-ejs-layouts": "^2.5.1",
-    - "express-session": "^1.18.1",
-    - "font-awesome": "^4.7.0",
-    - "mongodb": "^6.3.0",
-    - "mongoose": "^8.8.2",
-    - "passport": "^0.6.0",
-    - "passport-facebook": "^3.0.0",
-    - "passport-instagram": "^1.0.0",
-    - "passport-local": "^1.0.0",
-    - "path": "^0.12.7"
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.2",
+    "connect-flash": "^0.1.1",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "font-awesome": "^4.7.0",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.8.2",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "passport-instagram": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
 
   2.3 public
 
