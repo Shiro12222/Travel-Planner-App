@@ -18,7 +18,7 @@
     <h1 class="mb-3">Update Profile Form</h1>
     <div class="container">
         <div class="form-container col-md-10">
-            <form action="/profile/update" method="POST" class="w-100">
+            <form action="/updateProfile/<%= user.email %>" method="POST" class="w-100">
                 <input type="hidden" name="_method" value="PUT"> 
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>

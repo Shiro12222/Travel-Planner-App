@@ -383,11 +383,34 @@ app.get('/profile', isAuthenticated, (req, res) => {
 });
 
 // User Profile Route Update GET & PUT
-app.get('/profile/update', isAuthenticated, (req, res) => {
-  res.render('updateProfile', { title: 'Profile', user: req.user });
+app.get('/updateProfile/:email', isAuthenticated, async (req, res) => {
+  try {
+    const user = await User.findOne({
+      email: req.params.email
+    });
+  
+    if(!user) {
+      res.flash('error', 'User not found');
+      return res.redirect('/profile');
+    }
+
+    if (user.email !== req.user.email) {
+      req.flash('error', 'Unauthorized access');
+      return res.redirect('/profile');
+    }
+
+    res.render('updateProfile', { 
+      title: 'Edit Profile Page', 
+      user: req.user 
+    });
+  } catch (err) {
+    console.error('Update user profile error', error);
+    res.flash('error', "Error loading User Profile");
+    res.redirect('/profile')
+  }
 });
 
-app.put('/profile/update', isAuthenticated, async (req, res) => {
+app.post('/updateProfile/:email', isAuthenticated, async (req, res) => {
   try {
     const { name, email, password } = req.body;
     const updateData = { name, email };
@@ -408,6 +431,55 @@ app.put('/profile/update', isAuthenticated, async (req, res) => {
     console.error('Update profile error:', err);
     req.flash('error', 'Unable to update profile');
     res.redirect('/profile');
+  }
+});
+
+app.post('/updateProfile/:email', isAuthenticated, async (req, res) => {
+  try {
+    if (req.params.email !== req.user.email) {
+      req.flash('error', 'Unauthorized access');
+      return res.redirect('/profile');
+    }
+
+    const { name, email, password, confirmPassword } = req.body;
+
+    if (!name || !email) {
+      req.flash('error', 'Name and email are required');
+      return res.redirect(`/updateProfile/${req.user.email}`);
+    }
+
+    // Check Is Email Exist
+    if (email !== req.user.email) {
+      const existingUser = await User.findOne({ email });
+      if (existingUser) {
+        req.flash('error', 'Email already in use');
+        return res.redirect(`/updateProfile/${req.user.email}`);
+      }
+    }
+
+    const updateData = { name, email };
+
+    updateData.password = await bcrypt.hash(password, 10);
+
+    // Update User
+    const updatedUser = await User.findByIdAndUpdate(
+      req.user._id,
+      updateData,
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedUser) {
+      req.flash('error', 'User not found');
+      return res.redirect('/profile');
+    }
+
+    req.flash('success', 'Profile updated successfully');
+    res.redirect('/profile');
+
+  } catch (error) {
+    console.error('Update profile error:', error);
+    req.flash('error', 'Unable to update profile. Please try again.');
+    res.redirect(`/updateProfile/${req.user.email}`);
   }
 });
 
