@@ -64,6 +64,44 @@
 ## Operation guides
 
 4. Operation guides (like a user flow) for your server
+
+Installation guidline
+open vs code
+create .env file
+copy the code in env sample and modify the SESSION SECRET AND MONGODB_URL
+
+makesure u install nodejs
+
+npm install
+npm run dev
+
+terminal will display
+server is running on port 3001
+Connected to MongoDB
+MongoDB Atlas Connected
+Database ping CHeck Connection successful
+
+
+After go in the web:
+-> Home
+register
+login
+
+CRUD:
+Dashboard
+add new trip
+enter destination
+start date
+end date
+desciption
+create trip
+
+provide function
+edit
+delete
+add new trip
+
+
 - the use of Login/Logout pages: a list of valid login information, sign in steps? …
 - the use of your CRUD web pages: which button or UI is used to implement create, read, update, and delete?
 - the use your RESTful CRUD services: the lists of APIs? HTTP request types? Path URI? How to test them?
