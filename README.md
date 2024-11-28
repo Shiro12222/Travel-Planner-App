@@ -1,48 +1,39 @@
-4. Operation guides (like a user flow) for your server
-- the use of Login/Logout pages: a list of valid login information, sign in steps? …
-- the use of your CRUD web pages: which button or UI is used to implement create, read, update, and delete?
-- the use your RESTful CRUD services: the lists of APIs? HTTP request types? Path URI? How to test them?
-CURL testing commands?
-Notes:
-- `README.md` is important to let me know your project functions, which is crucial to marking the grade of
-your project.
-
 # Travel Planner Web Application
 
-### Group info: COMP S381F Group 8
+## Group info: COMP S381F Group 8
+  |     Student Name: <sub>`** for our group leader`</sub>  |   Student ID  |
+  | :---: | :---: |
+  | <sup>**</su> Ng Man Hei | 13505304      |  
+  | Tse Man Hin   | 13515463      |
+  | Wong Sin Ngai | 13588511      |
+  | Pau Ka Lok    | 13068093      |
+  | Leung Aidan   | 13626010      |
 
-|     Student Name: `** for our group leader`   |   Student ID  |
-| :---: | :---: |
-| ** Ng Man Hei | 13505304      |  
-| Tse Man Hin   | 13515463      |
-| Wong Sin Ngai | 13588511      |
-| Pau Ka Lok    | 13068093      |
-| Leung Aidan   | 13626010      |
-
-2. Project file info: 
-  2.1 Summary of functionalities of our web provided Server.js:
-    2.11. User Authentication
-      - Registration
-      - Login
-      - Log out
-      - Profile Management
+## Project file info: 
+  ### Summary of functionalities of our web provided Server.js:
+  
+  1. User Authentication
+      * Registration
+      * Login
+      * Log out
+      * Profile Management
     
-    2.12 Trip Management
-      - Create Trips
-      - Edit Trips
-      - Delete Trips
-      - View My Trips
+  3. Trip Management
+      * Create Trips
+      * Edit Trips
+      * Delete Trips
+      * View My Trips
       
-    2.13 Contact Form
-      - Contact us
+  4. Contact Form
+      * Contact us
 
-    2.14 Budget Calculator
+  5. Budget Calculator
 
-    2.15 Trip Planner
+  6. Trip Planner
 
-    2.16 Setting
+  7. Setting
       
-  2.2 package.json Dependencies:
+  ### package.json Dependencies:
   
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
@@ -63,12 +54,20 @@ your project.
     "passport-local": "^1.0.0",
     "path": "^0.12.7"
 
-  2.3 public
+  ### public
 
-  2.4 views
+  ### views
 
-  2.5 models
+  ### models
 
-3. cloud-based server URL: https://hkmu381-grpprj.onrender.com/ 
+## cloud-based server URL: https://hkmu381-grpprj.onrender.com/ 
+## Operation guides
 
-4.
+4. Operation guides (like a user flow) for your server
+- the use of Login/Logout pages: a list of valid login information, sign in steps? …
+- the use of your CRUD web pages: which button or UI is used to implement create, read, update, and delete?
+- the use your RESTful CRUD services: the lists of APIs? HTTP request types? Path URI? How to test them?
+CURL testing commands?
+Notes:
+- `README.md` is important to let me know your project functions, which is crucial to marking the grade of
+your project.
