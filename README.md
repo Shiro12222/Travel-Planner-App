@@ -109,3 +109,7 @@ CURL testing commands?
 Notes:
 - `README.md` is important to let me know your project functions, which is crucial to marking the grade of
 your project.
+
+RESTFUL CRUD
+GET ALL USER: curl http://hkmu381-grpprj.onrender.com/users
+
