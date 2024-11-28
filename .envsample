@@ -1,0 +1,3 @@
+SESSION_SECRET = anything u want
+MONGODB_URI = Your mongodb url
+PORT = 3000 
